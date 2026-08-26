@@ -1,0 +1,29 @@
+generated: '2026-08-26'
+method: probed
+source: live probes of https://nuvaira.com/.well-known/*
+note: >-
+  Every /.well-known/ path probed on the only host Nuvaira operates (nuvaira.com, a WordPress
+  marketing site) returned a real HTTP 404 with the site's 404 template. Nothing was fetched and
+  nothing was saved, so no WellKnown or SecurityTxt pointer is emitted in apis.yml — this file
+  records a verified absence, not a served discovery surface. Nuvaira publishes no API host, so
+  there are no additional baseURL or OpenAPI servers[] hosts to probe.
+hit_count: 0
+hosts:
+- host: https://nuvaira.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
