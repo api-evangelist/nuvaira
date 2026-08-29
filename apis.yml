@@ -9,6 +9,17 @@ description: 'Nuvaira, Inc. is a privately held medical device company headquart
   AIRFLOW clinical program, and is currently running the pivotal AIRFLOW-3 trial. Nuvaira sells
   a regulated physical therapeutic device to hospitals and interventional pulmonologists; it
   publishes no developer program, public API, SDK, or machine-readable API contract.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://nuvaira.com/wp-content/themes/nuvaira-theme/assets/images/nuvaira-logo.svg
 url: https://raw.githubusercontent.com/api-evangelist/nuvaira/refs/heads/main/apis.yml
 x-type: company
